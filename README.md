@@ -45,6 +45,22 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
+## Redis Setup
+
+[nest-js-bull-queue](https://docs.nestjs.com/techniques/queues) uses [Bull](https://docs.bullmq.io/) for handling background jobs, which requires Redis as a backend. Follow these steps to set up Redis for your NestJS application:
+
+### 1. Install Redis
+
+Make sure Redis is installed on your machine or use a cloud-based solution. For local development, you can [download Redis here](https://redis.io/download).
+
+### 2. Configure Redis Connection
+
+In your NestJS project, install the Redis package:
+
+```bash
+$ npm install @nestjs/bull bull
+```
+
 ## Test
 
 ```bash
